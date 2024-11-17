@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/BasicCalculator.js"></script>
+    <title>Basic calculator</title>
+</head>
+<body>
+    <h2>Basic calculator</h2>
+    <form>
+        <label for="fnumber1">Enter first number:</label>
+        <input id="fnumber1" type="text" name="fnumber1" size="5">
+        <br><br>
+        <label for="fnumber2">Enter second number:</label>
+        <input id="fnumber2" type="text" name="fnumber2" size="5">
+        <br><br>
+        <input type="button" onclick="add();" value="Add +">
+        <br><br>
+        <input id="fminus" type="button" onclick="minus();" value="Minus -">
+        <br><br>
+        <input id="fdivision" type="button" onclick="division();" value="Division /">
+        <br><br>
+        <input id="fmultiplication" type="button" onclick="multiplication();" value="Multiplication *">
+    </form>
+    <div id="result"></div>
+</body>
+</html>
