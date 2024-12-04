@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate a multiplication table</title>
+    <script>
+        function createMultiplicationTable() {
+            let numberTable = document.getElementById("intNumber").value;
+            let multResults = "<ul>";
+            for (let n = 1; n <= 10; n++) {
+                let multResult = numberTable * n;
+                multResults += "<li>" + numberTable + " * " + n + " = " + multResult + "</li>";
+            }
+            multResults += "</ul>";
+            document.getElementById("multTable").innerHTML = multResults;
+        }
+    </script>
+</head>
+<body>
+    <h3>Generate a multiplication table</h3>
+    <form>
+        <label for="intNumber">Enter a number: </label>
+        <input id="intNumber" type="text" name="intNumber" size="2">
+        <br><br>
+        <input id="createTable" type="button" onclick="createMultiplicationTable()" value="Create multiplication table">
+        <br><br>
+        <div id="multTable">Table</div>
+    </form>
+</body>
+</html>
